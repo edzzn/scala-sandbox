@@ -35,8 +35,6 @@ object Validacion_Cedula {
 
     // 10 menos el modulo de 10 de la suma debe ser igual al ultimo
     // digito de la cedula, o puede ser CERO
-
-
     if ((10 - (suma% 10)) == cedula(9) || (suma % 10 == 0 && suma %10 == cedula(9)))
       return true
     else
